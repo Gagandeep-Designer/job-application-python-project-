@@ -1,0 +1,33 @@
+# job application  letter Format
+letter='''<Candidate Name>,\n
+<Address>,\n
+<Email id>,\n
+<Phone Number>,\n
+<Date:>,\n
+Subject:Job Application Letter for The position in an orgnisation.\n
+[Dear Name],\n
+Mention Where you saw the job posting and showcase your interest in working in this role.\n
+write some of your qualifications which match the job requirement.\n
+Explain briefly about your past experience to emphasize your personality and skills.\n
+Sincerely,\n
+<Candidate Signature>,'''
+print(" \n")
+candidate_name=input("Enter your Name:-\n")
+candidate_address=input("Enter your Address:-\n")
+candidate_email_id=input("Enter your Email Id:-\n")
+candidate_phone_number=input("Enter your Phone Number:-\n")
+candidate_date=input("Enter Date:-\n")
+dear_name=input("Enter name:\n")
+candidate_sign=input("Enter your Signature:-\n")
+letter=letter.replace("<Candidate Name>",candidate_name)
+letter=letter.replace("<Address>",candidate_address)
+letter=letter.replace("<Email id>",candidate_email_id)
+letter=letter.replace("<Phone Number>",candidate_phone_number)
+letter=letter.replace("<Date:>",candidate_date)
+letter=letter.replace("[Dear Name]",dear_name)
+
+letter=letter.replace("<Candidate Signature>",candidate_sign)
+# letter=letter.replace("<Candidate Name>",candidate_name)
+
+print(letter)
+
